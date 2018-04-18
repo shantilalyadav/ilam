@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_12662_ilamsystem.vrs</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>vrs</name>
+        <script><![CDATA[var vrs = Class.create();
+vrs.prototype = {
+    initialize: function() {
+    },
+sajan:function(mterm,mpl){
+var pts = new GlideRecord('x_12662_ilamsystem_inst');
+	pts.addQuery('sys_id',current.sys_id);
+	pts.query();
+	if (pts.next()){
+	var pterm=parseInt(mterm);
+var mtone=new GlideDateTime(mpl);
+	mtone.addYearsUTC(pterm);
+	pts.maturitydate=mtone;
+	//gs.addInfoMessage('The maturity date is'+' ' + mtone);	
+	pts.update();
+	}
+	
+},
+    type: 'vrs'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-02-16 11:04:42</sys_created_on>
+        <sys_id>0ad797f14f101300e963c4b18110c7da</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>vrs</sys_name>
+        <sys_package display_value="ILAMSYSTEM" source="x_12662_ilamsystem">56c926614f101300e963c4b18110c758</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="ILAMSYSTEM">56c926614f101300e963c4b18110c758</sys_scope>
+        <sys_update_name>sys_script_include_0ad797f14f101300e963c4b18110c7da</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-02-16 11:24:39</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="" label="inst" language="en" table="x_12662_ilamsystem_inst">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>inst</label>
+            <language>en</language>
+            <name>x_12662_ilamsystem_inst</name>
+            <plural>insts</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-02-15 13:00:26</sys_created_on>
+            <sys_id>216be6294f101300e963c4b18110c7e0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>inst</sys_name>
+            <sys_package display_value="ILAMSYSTEM" source="x_12662_ilamsystem">56c926614f101300e963c4b18110c758</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ILAMSYSTEM">56c926614f101300e963c4b18110c758</sys_scope>
+            <sys_update_name>sys_documentation_x_12662_ilamsystem_inst__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-02-15 13:00:26</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

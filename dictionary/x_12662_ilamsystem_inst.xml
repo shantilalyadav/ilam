@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="inst" max_length="40" name="x_12662_ilamsystem_inst" sizeclass="6" type="collection">
+        <element label="address" max_length="40" name="address" type="string"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Maturityamount" max_length="20" name="maturityamount" type="price"/>
+        <element label="maturitydate" max_length="40" name="maturitydate" type="glide_date_time"/>
+        <element label="name" max_length="32" name="name" reference="sys_user" type="reference"/>
+        <element label="policydate" max_length="40" name="policydate" type="glide_date_time"/>
+        <element label="premium" max_length="20" name="premium" type="price"/>
+        <element label="term" max_length="40" name="term" type="integer"/>
+    </element>
+</database>
